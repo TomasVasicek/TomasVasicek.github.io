@@ -222,7 +222,7 @@ p {
 #about-info a {
     background-color: #7d7879;
     color: white;
-    padding: 0 4px;
+    padding: 0 3px;
 }
 #about-info a:hover {
     color: blue;
