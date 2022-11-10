@@ -29,6 +29,7 @@ body {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    text-align: center;
 }
 
 .lead {
@@ -74,6 +75,45 @@ body {
     padding: 3.5rem 0;
 }
 
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2.5rem;
+}
+
+.p-3 {
+    padding: 3.5rem;
+}
+.m-1 {
+    margin: 1.5rem;
+}
+
+.m-2 {
+    margin: 2.5rem;
+}
+
+.m-3 {
+    margin: 3.5rem;
+}
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333333;
+}
+.bg-dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444444 dotted 1px;
+}
 p {
     margin: 0.75rem 0;
 }
@@ -94,6 +134,7 @@ a {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 2;
 }
 
 #navbar ul {
@@ -111,7 +152,8 @@ a {
     margin: 0.25rem 0.5rem;
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover,
+.active{
     background-color: #4717F6;
     border-radius: 5px;
 }
@@ -146,6 +188,7 @@ a {
     width: 50%;
     text-align: center;
     padding: 1rem;
+    flex: 1;
 }
 
 #about .items .item i {
@@ -154,6 +197,11 @@ a {
     margin-bottom: 1rem;
     border-radius: 50%;
     font-size: xxx-large;
+    color: black;
+}
+#about .items .item i:hover {
+    background: #333333;
+    color: white;
 }
 .source {
     font-size:  small;
@@ -166,4 +214,16 @@ a {
 .source a {
     color: #aaaaaa;
     text-decoration: none;
+}
+#cubes div {
+    flex: 1;
+}
+#cubes {
+    display: flex;
+}
+#cubes .cubes-img {
+    background: url("../img/kostka3.jpg") no-repeat center;
+}
+#main-footer {
+    font-size: larger;
 }
