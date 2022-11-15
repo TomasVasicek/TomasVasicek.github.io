@@ -105,6 +105,9 @@ body {
     background-color: #333333;
     color: #ffffff;
 }
+.bg-primary {
+    background-color: #4717F6;
+}
 .list {
     margin: 0.5rem 0;
     list-style: none;
@@ -120,6 +123,10 @@ p {
 
 a {
     text-decoration: none;
+}
+.active{
+    background-color: #4717F6;
+    border-radius: 5px;
 }
 
 /*navbar*/
@@ -152,11 +159,11 @@ a {
     margin: 0.25rem 0.5rem;
 }
 
-#navbar ul li a:hover,
-.active{
+#navbar ul li a:hover {
     background-color: #4717F6;
     border-radius: 5px;
 }
+
 
 /* Showcase */
 #showcase {
@@ -226,4 +233,34 @@ a {
 }
 #main-footer {
     font-size: larger;
+}
+#images .items {
+    display: flex;
+    justify-content: space-between;
+}
+#images .item img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+#contact {
+    display: flex;
+}
+#contact div {
+    flex: 1;
+}
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+#contact .contact-form label {
+    display: block;
+    margin-bottom: 3px;
+}
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact .contact-adress h3 {
+    margin-top: 2rem;
 }
