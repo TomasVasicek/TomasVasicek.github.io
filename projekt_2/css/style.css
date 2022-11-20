@@ -236,7 +236,7 @@ a {
 }
 #images .items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
 }
 #images .item img {
     display: block;
