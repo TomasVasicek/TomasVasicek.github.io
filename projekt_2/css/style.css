@@ -231,9 +231,6 @@ a {
 #cubes .cubes-img {
     background: url("../img/kostka3.jpg") no-repeat center;
 }
-#main-footer {
-    font-size: larger;
-}
 #images .items {
     display: flex;
     justify-content: space-between ;
@@ -263,4 +260,8 @@ a {
 }
 #contact .contact-adress h3 {
     margin-top: 2rem;
+}
+#main-footer {
+    height: 400px;
+    display: flex;
 }

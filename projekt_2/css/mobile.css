@@ -1,0 +1,58 @@
+#about .items {
+    display: block;
+    padding: 1rem;
+}
+#about .items .item {
+    display: flex;
+    text-align: left;
+}
+#about .items .item i {
+    align-self: center;
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}
+/* Smartphone */
+@media screen and (max-width: 500px){
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar #logo {
+        margin-bottom: 1.3rem;
+        text-align: center;
+    }
+    .l-heading{
+        letter-spacing: 0;
+        font-size: 3rem;
+    }
+    #cubes {
+        display: block;
+        padding: 1rem;
+    }
+    #cubes .m-heading {
+        margin-bottom: 2rem;
+    }
+    #images {
+        display: none;
+    }
+    #contact {
+        flex-direction: column;
+    }
+}
+/* Tablet/mobil sirka */
+@media screen and (max-height: 568px) {
+    .l-heading {
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+    #navbar {
+        align-items: flex-start;
+    }
+    #navbar ul {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #images {
+        display: none;
+    }
+}
