@@ -163,6 +163,9 @@ a {
     background-color: #4717F6;
     border-radius: 5px;
 }
+#navbar #hambac {
+    display:none;
+}
 
 
 /* Showcase */

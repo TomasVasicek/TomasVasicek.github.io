@@ -23,6 +23,10 @@
 <nav id="navbar">
     <div id="logo"><a href="index.html"><span class="text-primary"><i class="fa-solid fa-cube"></i></span><span
             class="text-primary"> Rubik's </span> cube </a></div>
+    <a href="#" id="hambac">
+        <i class="fa fa-bars fa-2x"></i>
+    </a>
+
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">O 3x3x3</a></li>
@@ -151,7 +155,17 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+    $('#navbar #hambac').click(function (){
+        $('#navbar ul').slideToggle("slow")
+    });
+    if($(window).width() < 501 ) {
+    $('navbar ul').click(function (){
+        $("#navbar ul li").hide();
+    });
+    }
+
     // Smooth scrolling
+    if($(window).width() < 501 ) {
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
             event.preventDefault();
@@ -162,7 +176,18 @@
                 }, 800
             )
         }
-    })
+    })}
+    else($('#navbar a, .btn').on('click', function (event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100
+                }, 800
+            )
+        }
+    }))
 
 
     var nav_sections = $('section');
