@@ -165,19 +165,7 @@
     }
 
     // Smooth scrolling
-    if($(window).width() < 501 ) {
     $('#navbar a, .btn').on('click', function (event) {
-        if (this.hash !== '') {
-            event.preventDefault();
-            const hash = this.hash;
-            $('html, body').animate(
-                {
-                    scrollTop: $(hash).offset().top - 260
-                }, 800
-            )
-        }
-    })}
-    else($('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
             event.preventDefault();
             const hash = this.hash;
@@ -187,7 +175,7 @@
                 }, 800
             )
         }
-    }))
+    })
 
 
     var nav_sections = $('section');
