@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2.5rem 0;
+}
+
+.py-3 {
+    padding: 3.5rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2.5rem;
+}
+
+.p-3 {
+    padding: 3.5rem;
+}
+#navbar {
+    display: flex;
+    padding: 1rem;
+    background: #0E0B16;
+    color: #fff;
+
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+#navbar a {
+    color: #fff;
+}
+
+#navbar ul li a {
+    padding: 0.25rem 1rem;
+    margin: 0.25rem 0.5rem;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+#google {
+    background-color: #444444;
+    display: flex;
+}
