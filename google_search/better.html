@@ -8,15 +8,67 @@
     <title>Pokročilé vyhledávání</title>
 </head>
 <body>
-<nav id="navbar">
-    <div class="container">
-        <ul>
-            <li><a href="index.html">Vyhledávání</a></li>
-            <li><a href="images.html">Obrázky</a></li>
-            <li><a class="current"  href="better.html">Pokročilé vyhledávání</a></li>
+<header>
+    <div class="header-items">
+        <ul class="links">
+            <li>
+                <a href="#" class="active">Vyhledávání</a>
+            </li>
+            <li>
+                <a href="images.html">Vyhledávání obrázků</a>
+            </li>
+            <li>
+                <a href="better.html">Pokročilé vyhledávání</a>
+            </li>
         </ul>
-
     </div>
-</nav>
+</header>
+<main>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Google Search</h1>
+            <p>Pokročilé vyhledávání</p>
+        </div>
+        <div class="subtitle">
+            <p>Najít stránky...</p>
+        </div>
+        <form action="https://www.google.com/search" name="f">
+            <div class="row with-text">
+                <p>se všemi těmito slovy:</p>
+                <label>
+                    <input type="text" name="as_q" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocapitalize="off" spellcheck="false">
+                </label>
+            </div>
+            <div class="row with-text">
+                <p>s tímto přesným slovem nebo frázemi:</p>
+                <label>
+                    <input type="text" name="as_epq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocapitalize="off" spellcheck="false">
+                </label>
+            </div>
+            <div class="row with-text">
+                <p>se všemi těmito slovy:</p>
+                <label>
+                    <input type="text" name="as_oq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocapitalize="off" spellcheck="false">
+                </label>
+            </div>
+            <div class="row with-text">
+                <p>,na kterých není žádné z těchto slov</p>
+                <label>
+                    <input type="text" name="as_eq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocapitalize="off" spellcheck="false">
+                </label>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Pokročilé hledání" name="btnK">
+            </div>
+        </form>
+    </div>
+</main>
+<button onclick="myFunction()">Toggle dark mode</button>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 </body>
 </html> 

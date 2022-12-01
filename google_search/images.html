@@ -8,19 +8,48 @@
     <title>Obrázky</title>
 </head>
 <body>
-<nav id="navbar">
-    <div class="container">
-        <ul>
-            <li><a href="index.html">Vyhledávání</a></li>
-            <li><a class="current" href="images.html">Obrázky</a></li>
-            <li><a href="better.html">Pokročilé vyhledávání</a></li>
+<header>
+    <div class="header-items">
+        <ul class="links">
+            <li>
+                <a href="#" class="active">Vyhledávání</a>
+            </li>
+            <li>
+                <a href="images.html">Vyhledávání obrázků</a>
+            </li>
+            <li>
+                <a href="better.html">Pokročilé vyhledávání</a>
+            </li>
         </ul>
     </div>
-</nav>
-<input class="gLFyf"  maxlength="2048" name="q" type="text" aria-autocomplete="both"
-       aria-haspopup="false" autocapitalize="off" autocomplete="off" autofocus=""
-       role="combobox" spellcheck="false" title="Hledat" value="" aria-label="Najít"
-       data-ved="0ahUKEwiwgpS5-NL7AhWKHewKHbo4DJYQ39UDCAM">
-<input type="submit" value="Hledat">
+</header>
+<main>
+    <div class="middle">
+        <div class="title">
+            <h1>Google Search</h1>
+            <p>Hledání obrázků</p>
+        </div>
+        <form action="https://images.google.com/images" name="f">
+            <div class="row">
+                <label>
+                    <input type="text" name="as_q" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocapitalize="off" spellcheck="false">
+                </label>
+                <button type="submit" name="btnK"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Hledat" name="btnK">
+            </div>
+        </form>
+    </div>
+</main>
+<button onclick="myFunction()">Toggle dark mode</button>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
 </body>
 </html> 

@@ -9,27 +9,51 @@
 </head>
 <body>
 <header>
-    <nav id="navbar">
-            <ul>
-                <li><a class="current" href="index.html">Vyhledávání</a></li>
-                <li><a href="images.html">Obrázky</a></li>
-                <li><a href="better.html">Pokročilé vyhledávání</a></li>
-            </ul>
-    </nav>
+    <div class="header-items">
+        <ul class="links">
+            <li>
+                <a href="#" class="active">Vyhledávání</a>
+            </li>
+            <li>
+                <a href="images.html">Vyhledávání obrázků</a>
+            </li>
+            <li>
+                <a href="better.html">Pokročilé vyhledávání</a>
+            </li>
+        </ul>
+    </div>
 </header>
-<div id="google">
-    <h1 class="h-heading">Google</h1>
-<form action="https://www.google.com/search">
-    <label>
-        <input class="gLFyf" maxlength="2048" name="q" type="text" aria-autocomplete="both"
-               aria-haspopup="false" autocapitalize="off" autocomplete="off" autofocus=""
-               role="combobox" spellcheck="false" title="Hledat" value="" aria-label="Najít"
-               data-ved="0ahUKEwim-uji7dL7AhVXXvEDHU4CBc0Q39UDCAQ">
-    </label>
-    <input type="submit" value="Google Search">
-    <input class="RNmpXc" value="Zkusím štěstí" aria-label="Zkusím štěstí" name="btnI" type="submit"
-           data-ved="0ahUKEwim-uji7dL7AhVXXvEDHU4CBc0Q19QECA4">
-</form>
-</div>
+<main>
+    <div class="middle">
+        <div class="title">
+            <p>
+                <span style='color: #4285f4'>G</span> <span style='color: #ea4335'>O</span> <span
+                    style='color: #fbbc05'>O</span> <span style='color: #4285f4'>G</span> <span
+                    style='color: #34a853'>L</span> <span style='color: #ea4335'>E</span>
+            </p>
+            <p>Klasické vyhledávání</p>
+        </div>
+        <form action="https://www.google.com/search">
+            <label>
+                <input class="gLFyf" maxlength="2048" name="q" type="text" aria-autocomplete="both"
+                       aria-haspopup="false" autocapitalize="off" autocomplete="off" autofocus=""
+                       role="combobox" spellcheck="false" title="Hledat" value="" aria-label="Najít"
+                       data-ved="0ahUKEwim-uji7dL7AhVXXvEDHU4CBc0Q39UDCAQ">
+            </label>
+            <div class="buttons">
+                <input type="submit" value="Google Search">
+                <input class="RNmpXc" value="Zkusím štěstí" aria-label="Zkusím štěstí" name="btnI" type="submit"
+                       data-ved="0ahUKEwim-uji7dL7AhVXXvEDHU4CBc0Q19QECA4">
+            </div>
+        </form>
+    </div>
+</main>
+<button onclick="myFunction()">Toggle dark mode</button>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 </body>
 </html> 
