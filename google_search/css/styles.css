@@ -207,6 +207,13 @@ main .middle form .buttons {
     opacity: 0.6;
     cursor: not-allowed;
 }
+main .middle form .buttons2 {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
 main .middle form .buttons input {
     background-color: lightgray;
@@ -220,9 +227,24 @@ main .middle form .buttons input {
     font-size: 0.9em;
     transition: all 0.3s;
 }
+main .middle form .buttons2 input {
+    background-color: blue;
+    border: 1px solid lightgray;
+    border-radius: 24px;
+    padding: 0 2em;
+    height: 44px;
+    cursor: pointer;
+    color: white;
+    margin: 0 5% 5% 5%;
+    font-size: 0.9em;
+    transition: all 0.3s;
+}
 
 main .middle form .buttons input:hover {
     background-color: gray;
+}
+main .middle form .buttons2 input:hover {
+    background-color: darkblue;
 }
 
 main .middle form .row p {
