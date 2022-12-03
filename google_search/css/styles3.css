@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main .middle form .row input {
+    width: 190%;
+    background-color: lightgray;
+    border: 1px solid #5f6368;
+    height: 44px;
+    border-radius: 24px;
+    font-size: 1em;
+    color: black;
+    transition: border 0.3s;
+    text-indent: 5%;
+}

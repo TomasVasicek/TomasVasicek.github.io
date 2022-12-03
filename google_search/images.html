@@ -5,17 +5,22 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Obrázky</title>
 </head>
 <body>
 <header>
     <div class="header-items">
+        <i class="fa-regular fa-moon" onclick="myFunction()"></i>
         <ul class="links">
             <li>
-                <a href="#" class="active">Vyhledávání</a>
+                <a href="index.html">Vyhledávání</a>
             </li>
             <li>
-                <a href="images.html">Vyhledávání obrázků</a>
+                <a href="#" class="active">Vyhledávání obrázků</a>
             </li>
             <li>
                 <a href="better.html">Pokročilé vyhledávání</a>
@@ -26,7 +31,11 @@
 <main>
     <div class="middle">
         <div class="title">
-            <h1>Google Search</h1>
+            <p>
+                <span style='color: #4285f4'>G</span> <span style='color: #ea4335'>O</span> <span
+                    style='color: #fbbc05'>O</span> <span style='color: #4285f4'>G</span> <span
+                    style='color: #34a853'>L</span> <span style='color: #ea4335'>E</span>
+            </p>
             <p>Hledání obrázků</p>
         </div>
         <form action="https://images.google.com/images" name="f">
@@ -43,7 +52,22 @@
         </form>
     </div>
 </main>
-<button onclick="myFunction()">Toggle dark mode</button>
+<footer>
+    <div class="locate">Česko</div>
+    <div class="footer-items">
+        <div class="links">
+            <div><a href="https://about.google/?utm_source=google-CZ&utm_medium=referral&utm_campaign=hp-footer&fg=1">O společnosti Google</a></div>
+            <div><a href="https://ads.google.com/intl/cs_cz/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Reklama</a></div>
+            <div><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Firma</a></div>
+            <div><a href="https://www.google.com/search/howsearchworks/?fg=1">Jak funguje Vyhledávání</a></div>
+        </div>
+        <div class="links">
+            <div><a href="https://policies.google.com/privacy?hl=cs&fg=1">Ochrana soukromí</a></div>
+            <div><a href="https://policies.google.com/terms?hl=cs&fg=1">Smluvní podmínky</a></div>
+            <div><a href="better.html">Rozšířené vyhledávání</a></div>
+        </div>
+    </div>
+</footer>
 <script>
     function myFunction() {
         let element = document.body;

@@ -5,11 +5,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Google search</title>
 </head>
 <body>
 <header>
     <div class="header-items">
+        <i class="fa-regular fa-moon" onclick="myFunction()"></i>
         <ul class="links">
             <li>
                 <a href="#" class="active">Vyhledávání</a>
@@ -33,22 +38,38 @@
             </p>
             <p>Klasické vyhledávání</p>
         </div>
-        <form action="https://www.google.com/search">
-            <label>
-                <input class="gLFyf" maxlength="2048" name="q" type="text" aria-autocomplete="both"
-                       aria-haspopup="false" autocapitalize="off" autocomplete="off" autofocus=""
-                       role="combobox" spellcheck="false" title="Hledat" value="" aria-label="Najít"
-                       data-ved="0ahUKEwim-uji7dL7AhVXXvEDHU4CBc0Q39UDCAQ">
-            </label>
-            <div class="buttons">
-                <input type="submit" value="Google Search">
-                <input class="RNmpXc" value="Zkusím štěstí" aria-label="Zkusím štěstí" name="btnI" type="submit"
-                       data-ved="0ahUKEwim-uji7dL7AhVXXvEDHU4CBc0Q19QECA4">
-            </div>
-        </form>
+            <form action="https://www.google.com/search" name="f">
+                <div class="row">
+                    <label>
+                        <input type="text" name="as_q" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocapitalize="off" spellcheck="false">
+                    </label>
+                    <button type="submit" name="btnK"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Hledat" name="btnK">
+                    <input type="submit" value="Zkusím štěstí" name="btnI">
+                </div>
+            </form>
     </div>
 </main>
-<button onclick="myFunction()">Toggle dark mode</button>
+<footer>
+    <div class="locate">Česko</div>
+    <div class="footer-items">
+        <div class="links">
+            <div><a href="https://about.google/?utm_source=google-CZ&utm_medium=referral&utm_campaign=hp-footer&fg=1">O společnosti Google</a></div>
+            <div><a href="https://ads.google.com/intl/cs_cz/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Reklama</a></div>
+            <div><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Firma</a></div>
+            <div><a href="https://www.google.com/search/howsearchworks/?fg=1">Jak funguje Vyhledávání</a></div>
+        </div>
+        <div class="center"><a href="https://sustainability.google/intl/cs/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=#home">🍃 Uhlíkově neutrální od roku 2007</a></div>
+        <div class="links">
+            <div><a href="https://policies.google.com/privacy?hl=cs&fg=1">Ochrana soukromí</a></div>
+            <div><a href="https://policies.google.com/terms?hl=cs&fg=1">Smluvní podmínky</a></div>
+            <div><a href="better.html">Rozšířené vyhledávání</a></div>
+        </div>
+    </div>
+</footer>
 <script>
     function myFunction() {
         let element = document.body;
