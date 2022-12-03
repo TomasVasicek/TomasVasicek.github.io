@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: white;
+    background-color: #a9a3a4;
     color: black;
 }
 @keyframes example {
@@ -93,7 +93,7 @@ main .middle {
 }
 main .middle .title {
     margin-bottom: 5%;
-    text-shadow: darkgray 2px 2px;
+    text-shadow: gray 2px 2px;
 }
 main .middle .title h1, p, h2 {
     text-align: center;
