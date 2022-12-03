@@ -222,7 +222,7 @@ main .middle form .buttons input {
     padding: 0 2em;
     height: 44px;
     cursor: pointer;
-    color: white;
+    color: black;
     margin: 0 5% 5% 5%;
     font-size: 0.9em;
     transition: all 0.3s;
