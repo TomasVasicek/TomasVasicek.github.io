@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            /*document.querySelector('#red').onclick = function () {
+                document.querySelector('#hello').style.color = 'red';
+            };
+            document.querySelector('#blue').onclick = function () {
+                document.querySelector('#hello').style.color = 'blue';
+            };
+            document.querySelector('#green').onclick = function () {
+                document.querySelector('#hello').style.color = 'green';
+            };*/
+/*XDDDDDDDDDDDDDDD*/
+          /*  document.querySelectorAll('button').forEach(but => {
+                but.onclick = function () {
+                    document.querySelector('#hello').style.color = but.dataset.barva;
+                }*/
+            document.querySelector('select').onchange = function () {
+                document.querySelector('#hello').style.color = this.value
+            }
+        });
+    </script>
+</head>
+<body>
+<h1 id="hello">Hello</h1>
+<label>
+    <select>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+</label>
+</body>
+</html> 
