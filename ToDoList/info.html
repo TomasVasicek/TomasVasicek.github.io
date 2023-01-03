@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <title>Information Website</title>
+        <link rel="stylesheet" href="./css/style2.css">
+        </head>
+        <body style="background-color: gray;">
+          <h1>Zde najdeš jednoduchý návod k To Do Listu</h1>
+          <button id="reveal-definitions-button">KLIKNI NA MĚ!</button>
+          <iframe id="tutorial" width="560" height="315" src="https://www.youtube.com/embed/0JqenS1WxTw" title="FULLSCREEN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <ul id="definition-list" style="display: none;">
+            <li>
+              <div class="definition-container">
+                Zápis
+                <div id="definitionU" style="display: none;">Jednoduše do task baru zadejte vámi zvolenou aktivitu. <br>
+                Následně po kliknutí na "Přidat" nebo zmáčknutí tlačítka "Enter" na klávesnici, vámi zadaná aktivita bude vepsána do pole.</div>
+              </div>
+            </li>
+            <li>
+              <div class="definition-container">
+                Copy
+                <div id="definitionU" style="display: none;">Po kliknutí na tlačítko "Copy" se vám zkopíruje ta daná aktivita. Abyste věděli co přesně se vám zkopírovalo, je níže přidaná animace, která vám zobrazí zkopírovanou věc.</div>
+              </div>
+            </li>
+            <li>
+              <div class="definition-container">
+                Edit
+                <div id="definitionU" style="display: none;">Po kliknutí na tlačítko "Edit" se vám otevře task bar, který vám umožní opravit jakýkoliv překlep jste udělali.</div>
+              </div>
+            </li>
+            <li>
+                <div class="definition-container">
+                  Checked
+                  <div id="definitionU" style="display: none;">Pokud je již vámi zadaná aktivita hotová a chcete si jí odkliknout. Při dvojkliku na aktivitu (mimo pole talčítek), se vaše aktivita dokončí.</div>
+                </div>
+              </li>
+              <li>
+                <div class="definition-container">
+                  Odebrání
+                  <div id="definitionU" style="display: none;">Pro odebrání aktivity je nutné kliknout na křížek umístěný na konci řádku.</div>
+                </div>
+              </li>
+              <li>
+                <div class="definition-container">
+                  Problém
+                  <div id="definitionU" style="display: none;">Pokud vám nastane zde nějaký problém, stačí mě kdekoliv kontaktovat.</div>
+                </div>
+              </li>
+          </ul>
+          <button id="yt" class="proklik" style="display: none;">VIDEO</button>  <button class="proklik" id="text" style="display: none;">TEXT</button>
+          <button id="back-button" style="display: none;" onclick="direct()">Back</button>
+          <script>
+            const button = document.getElementById('reveal-definitions-button');
+            const definitionList = document.getElementById('definition-list');
+            const ytButton = document.getElementById('yt');
+            const textButton = document.getElementById('text');
+            const tutorial = document.getElementById('tutorial');
+            const backButton = document.getElementById('back-button');
+            backButton.style.display = 'block' ;
+            button.addEventListener('click', () => {
+              tutorial.style.display = 'none';
+              ytButton.style.display = 'inline-block';
+              textButton.style.display = 'inline-block';
+              button.style.display = 'none';
+            });
+
+            ytButton.addEventListener('click', () => {
+  tutorial.style.display = 'block';
+  definitionList.style.display = 'none';
+  backButton.style.display = 'inline-block';
+});
+
+textButton.addEventListener('click', () => {
+  tutorial.style.display = 'none';
+  definitionList.style.display = 'block';
+  backButton.style.display = 'inline-block';
+});
+            definitionList.addEventListener('click', (event) => {
+  if (event.target.className === 'definition-container') {
+    const definitionElement = event.target.querySelector('div');
+    if (definitionElement.style.display === 'block') {
+      definitionElement.style.display = 'none';
+    } else {
+      definitionElement.style.display = 'block';
+      let i = 0;
+      const definitionText = definitionElement.textContent;
+      definitionElement.textContent = '';
+      const typingInterval = setInterval(() => {
+        definitionElement.textContent += definitionText[i];
+        i++;
+        if (i === definitionText.length) {
+          clearInterval(typingInterval);
+        }
+      }, 50);
+    }
+  }
+});
+function direct() {
+  window.location.href = "index.html";
+}
+
+          </script>
+        </body>
+</html>
+
+</html>
