@@ -1,0 +1,244 @@
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+    transform: rotate(60deg);
+    animation: jump 5s reverse infinite;
+}
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+    animation: jump 5s reverse infinite;
+}
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+    animation: jump 5s reverse infinite;
+}
+
+.cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
+}
+
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+.cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+.cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: purple;
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+body {
+    opacity: 70%;
+    animation: smooth alternate 10s infinite;
+    perspective-origin: 25% 75%;
+    overflow: hidden;
+}
+@keyframes smooth {
+    10% {
+        opacity: 20%;
+        transform: rotate3d(5, 4, 8, 60deg) rotate(-5deg);
+    }
+    20% {
+        opacity: 90%;
+        transform: rotate3d(1, 9, -5, 120deg) rotate(3deg);
+    }
+    30% {
+        opacity: 50%;
+        transform: rotate3d(5, -7, 5, 10deg) rotate(1deg);
+    }
+    40% {
+        opacity: 100%;
+        transform: rotate3d(2, 7, -4, -140deg) rotate(-2deg);
+    }
+    50% {
+        opacity: 70%;
+        transform: rotate3d(1, 3, 7, 35deg) rotate(-1deg);
+    }
+    60% {
+        opacity: 50%;
+        transform: rotate3d(-9, -7, -5, 40deg) rotate(4deg);
+    }
+    70% {
+        opacity: 20%;
+        transform: rotate3d(3, -7, 5, 120deg) rotate(-3deg);
+    }
+    80% {
+        opacity: 60%;
+        transform: rotate3d(2, 1, 6, -49deg) rotate(-8deg);
+    }
+    90% {
+        opacity: 50%;
+        transform: rotate3d(5, 2, -7, 39deg) rotate(7deg);
+    }
+    100% {
+        opacity: 10%;
+        transform: rotate3d(-8, 1, 5, 2deg) rotate(-9deg);
+    }
+}
+@keyframes jump {
+    33% {
+        text-shadow: 0 1px#ff0000, 0 1px #ff0029, 0 1px #ff006a, 0 1px #ff00ab, 0 10px  #ff00e1, 0 12px #f200ff, 0 14px #dc00ff, 0 16px #bb00ff, 0 18px #9000ff, 0 10px #7a00ff, 0 12px #4400ff, 0 14px #2300ff, 0 16px #003eff, 0 18px #005fff, 0 10px #007fff, 0 12px  #0095ff, 0 14px #00abff,0 16px #00d6ff,0 18px #00f7ff, 0 10px #00ffbb, 0 12px #00ff90,  0 14px #00ff6f, 0 16px #00ff23, 0 18px #08ff00, 0 10px #29ff00, 0 12px #74ff00, 0 16px #a0ff00, 0 18px #b6ff00, 0 10px #d6ff00, 0 12px #ecff00, 0 14px #fff200, 0 16px #ffdc00, 0 18px #ffbb00, 0 10px #ffa600, 0 12px #ff8500, 0 14px #ff6f00, 0 16px #ff5a00, 0 18px #ff4400, 0 10px #ff2e00, 0 12px #ff1900, 0 14px #ff0300, 0 16px #ff0000, 0 18px#ff0000, 0 10px #ff0029, 0 12px #ff006a, 0 14px #ff00ab, 0 16px  #ff00e1, 0 18px #f200ff, 0 100px #dc00ff, 0 102px #bb00ff, 0 104px #9000ff, 0 106px #7a00ff, 0 108px #4400ff, 0 110px #2300ff, 0 112px #003eff, 0 114px #005fff, 0 116px #007fff, 0 118px  #0095ff, 0 120px #00abff,0 122px #00d6ff,0 124px #00f7ff, 0 126px #00ffbb, 0 128px #00ff90,  0 130px #00ff6f, 0 132px #00ff23, 0 134px #08ff00, 0 136px #29ff00, 0 138px #74ff00, 0 140px #a0ff00, 0 142px #b6ff00, 0 144px #d6ff00, 0 146px #ecff00, 0 148px #fff200, 0 150px #ffdc00, 0 152px #ffbb00, 0 154px #ffa600, 0 156px #ff8500, 0 158px #ff6f00, 0 160px #ff5a00, 0 162px #ff4400, 0 164px #ff2e00, 0 166px #ff1900, 0 168px #ff0300, 0 170px #ff0000;;
+        transform: rotate(120deg);
+    }
+    50% {
+        transform: translate(0, 0) rotate(180deg);
+        text-shadow: 0 1px #f3c623, 0 2px #f2aaaa, 0 3px #1e5799, 0 4px lightgreen, 0 5px pink, 0 6px cyan, 0 7px #d54062, 0 8px #8fc0a9, 0 9px #1e5799, 0 10px goldenrod, 0 20px hotpink, 0 30px cyan,  0 40px #f3c623, 0 50px #f2aaaa, 0 55px #1e5799, 0 60px lightgreen, 0 65px pink, 0 70px cyan, 0 75px #d54062, 0 80px #8fc0a9, 0 85px #1e5799, 0 90px goldenrod, 0 95px hotpink, 0 100px cyan;}
+    66.67% {
+        text-shadow: 0 -2px#ff0000, 0 -4px #ff0029, 0 -6px #ff006a, 0 -8px #ff00ab, 0 -10px  #ff00e1, 0 -12px #f200ff, 0 -14px #dc00ff, 0 -16px #bb00ff, 0 -18px #9000ff, 0 -20px #7a00ff, 0 -22px #4400ff, 0 -24px #2300ff, 0 -26px #003eff, 0 -28px #005fff, 0 -30px #007fff, 0 -32px  #0095ff, 0 -34px #00abff,0 -36px #00d6ff,0 -38px #00f7ff, 0 -40px #00ffbb, 0 -42px #00ff90,  0 -44px #00ff6f, 0 -46px #00ff23, 0 -48px #08ff00, 0 -50px #29ff00, 0 -52px #74ff00, 0 -56px #a0ff00, 0 -58px #b6ff00, 0 -60px #d6ff00, 0 -62px #ecff00, 0 -64px #fff200, 0 -66px #ffdc00, 0 -68px #ffbb00, 0 -70px #ffa600, 0 -72px #ff8500, 0 -74px #ff6f00, 0 -76px #ff5a00, 0 -78px #ff4400, 0 -80px #ff2e00, 0 -82px #ff1900, 0 -84px #ff0300, 0 -86px #ff0000, 0 -88px#ff0000, 0 -90px #ff0029, 0 -92px #ff006a, 0 -94px #ff00ab, 0 -96px  #ff00e1, 0 -98px #f200ff, 0 -100px #dc00ff, 0 -102px #bb00ff, 0 -104px #9000ff, 0 -106px #7a00ff, 0 -108px #4400ff, 0 -110px #2300ff, 0 -112px #003eff, 0 -114px #005fff, 0 -116px #007fff, 0 -118px  #0095ff, 0 -120px #00abff,0 -122px #00d6ff,0 -124px #00f7ff, 0 -126px #00ffbb, 0 -128px #00ff90,  0 -130px #00ff6f, 0 -132px #00ff23, 0 -134px #08ff00, 0 -136px #29ff00, 0 -138px #74ff00, 0 -140px #a0ff00, 0 -142px #b6ff00, 0 -144px #d6ff00, 0 -146px #ecff00, 0 -148px #fff200, 0 -150px #ffdc00, 0 -152px #ffbb00, 0 -154px #ffa600, 0 -156px #ff8500, 0 -158px #ff6f00, 0 -160px #ff5a00, 0 -162px #ff4400, 0 -164px #ff2e00, 0 -166px #ff1900, 0 -168px #ff0300, 0 -170px #ff0000;
+        transform: rotate(240deg);
+    }
+    80% {
+        transform: translate(0, 0) rotate(360deg);
+        text-shadow: 0 1px #f3c623, 0 2px #f2aaaa, 0 3px #1e5799, 0 4px lightgreen, 0 5px pink, 0 6px cyan, 0 7px #d54062, 0 8px #8fc0a9, 0 9px #1e5799, 0 10px goldenrod, 0 20px hotpink, 0 30px cyan,  0 40px #f3c623, 0 50px #f2aaaa, 0 55px #1e5799, 0 60px lightgreen, 0 65px pink, 0 70px cyan, 0 75px #d54062, 0 80px #8fc0a9, 0 85px #1e5799, 0 90px goldenrod, 0 95px hotpink, 0 100px cyan;}
+}
+.wheels {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.lines {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+}
+
+.lines:nth-of-type(2) {
+    transform: rotate(-60deg);
+    animation: jump 5s linear infinite;
+}
+.lines:nth-of-type(3) {
+    transform: rotate(-120deg);
+}
+.lines:nth-of-type(4) {
+    transform: rotate(-180deg);
+    animation: jump 5s linear infinite;
+}
+.lines:nth-of-type(5) {
+    transform: rotate(-240deg);
+}
+.lines:nth-of-type(6) {
+    transform: rotate(-300deg);
+    animation: jump 5s linear infinite;
+}
+
+.cabins {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
+}
+
+.cabins:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+.cabins:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+.cabins:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+.cabins:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+.cabins:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+.cabins:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
