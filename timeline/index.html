@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+<body>
+<header id="main-header">
+    <div class=container>
+        <h1><i class="fa-solid fa-copy"></i> Cube WR'S</h1>
+        <h3><i class="fa-solid fa-clipboard"></i> by: Tomáš Vašíček</h3>
+    </div>
+</header>
+<section id="timeline">
+    <ul>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2007: 10.36s</h3>
+                <p>Edouard Chambon | Belgian Open 2007</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2007: 9.77s</h3>
+                <p>Erik Akkersdijk | Dutch Open </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2008: 8.72s</h3>
+                <p>Yu Nakajima | Kashiwa Open (final round) </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2008: 7.08s</h3>
+                <p>Erik Akkersdijk | Czech Open </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2011: 5.66s</h3>
+                <p>Feliks Zemdegs | Melbourne Winter Open </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2015: 4.90s</h3>
+                <p>Lucas Etter | River Hill Fall </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2016: 4.73s</h3>
+                <p>Feliks Zemdegs | POPS Open </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2017: 4.69s</h3>
+                <p>Patrick Ponce | Rally In The Valley </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2017: 4.59s</h3>
+                <p>SeungBeom Cho | ChicaGhosts </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2018: 4.22s</h3>
+                <p>Feliks Zemdegs | Cube for Cambodia </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 2018: 3.47s</h3>
+                <p>Yusheng Du | Wuhu Open </p>
+            </div>
+        </li>
+    </ul>
+</section>
+<script>
+    const items = document.querySelectorAll("#timeline li");
+
+    const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const run = () =>
+        items.forEach((item) => {
+            if (isInViewport(item)) {
+                item.classList.add("show");
+            } else if (item.classList.contains("show")) {
+                item.classList.remove("show");
+            }
+        });
+
+    // Events
+    window.addEventListener("load", run);
+    window.addEventListener("resize", run);
+    window.addEventListener("scroll", run);
+
+</script>
+</body>
+</html>
