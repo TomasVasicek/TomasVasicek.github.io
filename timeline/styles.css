@@ -11,10 +11,22 @@
 
 body{
     font: normal 1rem/1.5 "Arial", sans-serif;
-    background-color: var(--primary-color);
     color: white;
     overflow-x: hidden;
     padding-bottom: 50px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("https://cdn.myshoptet.com/usr/www.johns-shop.cz/user/shop/detail/4935_johns-shop-cz-sada-rubikovych-kostek-3x3x3-klasicka-beznalepkova-carbonova.png?60d8f288");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main-header {
@@ -43,7 +55,6 @@ h1 {
 }
 
 #timeline ul {
-    background: var(--primary-color);
     padding: 50px 0;
 }
 
