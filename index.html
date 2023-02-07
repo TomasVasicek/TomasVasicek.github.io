@@ -4,9 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Tomáš Vašíček</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>My website</title>
 </head>
 <body>
-<h1>Tomáš Vaašíček</h1>
+
+<nav id="navbar" class="nav">
+    <a href="#" id="hambac">
+        <i class="fa fa-bars fa-2x"></i>
+    </a>
+    <ul class="nav-list">
+        <li>
+            <a href="#welcome-section">About</a>
+        </li>
+        <li>
+            <a href="#projects">Work</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<section id="welcome-section" class="welcome-section">
+    <h1 class="ml12">Heyo! jsem TomVas</h1>
+    <p class="bounce">IT student</p>
+    <div class="koko">
+        <span>I</span>
+        <span>T</span>
+        <span></span>
+        <span>s</span>
+        <span>t</span>
+        <span>u</span>
+        <span>d</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+    </div>
+</section>
+<div class="area">
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<section id="projects" class="projects-section">
+    <h2 class="projects-section-header">Toto jsou mé projekty</h2>
+
+    <div class="projects-grid">
+        <a
+                href="https://tomwazz.github.io/ToDoList/"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://github.com/TomasVasicek/TomasVasicek.github.io/blob/main/exampl/img/To%20Do%20List.png?raw=true"
+                    alt="project"
+            />
+            <p class="project-title">
+                To Do List
+                <span class="code"><i class="fa-solid fa-hand-pointer"></i></span>
+            </p>
+        </a>
+        <a
+                href="https://tomwazz.github.io/jaja/"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://github.com/Tomwazz/Tomwazz.github.io/blob/main/lastc/img/penguin.png?raw=true"
+                    alt="project"
+            />
+            <p class="project-title">
+                Penguin
+                <span class="code"><i class="fa-solid fa-hand-pointer"></i></span>
+            </p>
+        </a>
+        <a
+                href="https://tomasvasicek.github.io/certifikace/"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://github.com/Tomwazz/Tomwazz.github.io/blob/main/lastc/img/Secret%20Lang.png?raw=true"
+                    alt="project"
+            />
+            <p class="project-title">
+                Alfred Nobel
+                <span class="code"><i class="fa-solid fa-hand-pointer"></i></span>
+            </p>
+        </a>
+        <a
+                href="https://tomwazz.github.io/Landing%20page/"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://github.com/Tomwazz/Tomwazz.github.io/blob/main/lastc/img/Landing_page.png?raw=true"
+                    alt="project"
+            />
+            <p class="project-title">
+                Landing page
+                <span class="code"><i class="fa-solid fa-hand-pointer"></i></span>
+            </p>
+        </a>
+        <a
+                href="https://tomwazz.github.io/ProBOP/"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://github.com/Tomwazz/Tomwazz.github.io/blob/main/lastc/img/saver.png?raw=true"
+                    alt="project"
+            />
+            <p class="project-title">
+                Redirect
+                <span class="code"><i class="fa-solid fa-hand-pointer"></i></span>
+            </p>
+        </a>
+        <a
+                href="https://tomasvasicek.github.io/projekt_1/"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://github.com/Tomwazz/Tomwazz.github.io/blob/main/lastc/img/kostky.png?raw=true"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="animation">Rubikovky</span>
+                <span class="code"><i class="fa-solid fa-hand-pointer"></i></span>
+            </p>
+        </a>
+    </div>
+
+    <a      id="profile-link"
+            href="#"
+            class="btn btn-show-all"
+            target="_blank"
+    >More<i class="fas fa-chevron-right"></i
+    ></a>
+</section>
+<section id="contact" class="contact-section">
+    <div class="contact-section-header">
+        <h2>Chceš na něčem začít pracovat?</h2>
+        <p>kontaktuj mě zde</p>
+    </div>
+    <div class="contact-links">
+        <a href="https://github.com/TomasVasicek" target="_blank" class="btn contact-details lol1"><i class="fa-brands fa-github icon"></i></a>
+        <a href="https://www.instagram.com/tomvasss_/" target="_blank" class="btn contact-details lol2"><i class="fa-brands fa-instagram icon"></i></a>
+        <a href="https://www.facebook.com/tomas.vasicek.777/" target="_blank" class="btn contact-details lol3"><i class="fa-brands fa-facebook-messenger icon"></i></a>
+        <a
+                href="https://twitter.com/Tomvas_"
+                target="_blank"
+                class="btn contact-details lol4"
+        ><i class="fab fa-twitter"></i></a
+        >
+    </div>
+</section>
+
+<footer>
+    <p>
+        &copy; Tomáš Vašíček
+    </p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('#navbar #hambac').click(function (){
+        $('#navbar ul').slideToggle("slow")
+    });
+    if($(window).width() < 501 ) {
+        $('#navbar ul').click(function (){
+            $("#navbar ul li").hide();
+        });
+    };
+
+    var textWrapper = document.querySelector('.ml12');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml12 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 500 + 30 * i
+        }).add({
+        targets: '.ml12 .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: (el, i) => 100 + 30 * i
+    });
+    setTimeout(function() {
+        document.querySelector(".ml12").classList.add("show");
+    }, 2500);
+
+</script>
 </body>
 </html>
