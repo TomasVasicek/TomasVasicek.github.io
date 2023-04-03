@@ -15,9 +15,13 @@ body{
     overflow-x: hidden;
     padding-bottom: 50px;
 }
+h1 {
+    color: var(--primary-color);
+    font-size: x-large;
+}
 .parallax {
     /* The image used */
-    background-image: url("https://cdn.myshoptet.com/usr/www.johns-shop.cz/user/shop/detail/4935_johns-shop-cz-sada-rubikovych-kostek-3x3x3-klasicka-beznalepkova-carbonova.png?60d8f288");
+    background-image: url("https://github.com/TomasVasicek/TomasVasicek.github.io/blob/main/welfare/img/mc.jpg?raw=true");
 
     /* Set a specific height */
     min-height: 500px;
