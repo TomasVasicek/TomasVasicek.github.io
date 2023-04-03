@@ -161,6 +161,21 @@
 </section>
 </div>
 <script>
+  //each letter of the message with a delay
+  const description = document.querySelector(".description");
+  const text = description.textContent;
+  let index = 0;
+
+  const intervalId = setInterval(() => {
+    description.textContent = text.substring(0, index + 1);
+    index++;
+
+    if (index >= text.length) {
+      clearInterval(intervalId);
+    }
+  }, 50);
+
+  //viewport
   const items = document.querySelectorAll("#timeline li");
 
   const isInViewport = (el) => {
@@ -187,7 +202,6 @@
   window.addEventListener("load", run);
   window.addEventListener("resize", run);
   window.addEventListener("scroll", run);
-
 </script>
 </body>
 </html>

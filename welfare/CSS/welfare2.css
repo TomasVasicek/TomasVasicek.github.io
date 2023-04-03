@@ -11,17 +11,25 @@
 
 body{
     font: normal 1rem/1.5 "Arial", sans-serif;
-    color: white;
+    background-color: #c4bcbf;
     overflow-x: hidden;
     padding-bottom: 50px;
 }
 h1 {
     color: var(--primary-color);
     font-size: x-large;
+    padding: 35px;
+    text-align: center;
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000, 0 0 25px #000, 0 0 30px #000, 0 0 35px #000;
+}
+.description {
+    font-size: 1.3rem;
+    text-align:justify;
+    margin: 0 3rem 1rem 3rem;
 }
 .parallax {
     /* The image used */
-    background-image: url("https://github.com/TomasVasicek/TomasVasicek.github.io/blob/main/welfare/img/mc.jpg?raw=true");
+    background-image: url("https://scontent-prg1-1.xx.fbcdn.net/v/t31.18172-8/1417581_668125459894293_1998893032_o.png?_nc_cat=102&ccb=1-7&_nc_sid=9267fe&_nc_ohc=Cc0N-ABTrs8AX-AEOIT&_nc_ht=scontent-prg1-1.xx&oh=00_AfC5e4VGLkKzRAAtQegcVLT2y4yTsksuKtyeyGRRMcynUQ&oe=64522FEF");
 
     /* Set a specific height */
     min-height: 500px;
@@ -33,10 +41,7 @@ h1 {
     background-size: cover;
 }
 
-#main-header {
-    animation: bg 10s alternate infinite;
-    padding: 4rem 0;
-}
+
 @keyframes bg {
     0% {
         background-color: white;
@@ -89,13 +94,13 @@ h1 {
 #timeline ul li:nth-child(odd) div {
     left: 40px;
     transform: translate(200px, 0);
-    animation: bg 15s alternate infinite;
+    background-color: darkcyan;
 }
 
 #timeline ul li:nth-child(even) div {
     left: -434px;
     transform: translate(-200px, 0);
-    animation: bg 15s alternate-reverse infinite;
+    background-color: darkseagreen;
 }
 
 #timeline ul li::after {
