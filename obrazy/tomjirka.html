@@ -2,7 +2,6 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tomjirka.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -35,7 +34,8 @@
 <section id="page-3" class="page">
     <img src="img/tomjirka5.png" alt="">
     <h1 class="down">Problémy</h1>
-    <p class="right">Když jsme chtěli začít dílo zpracovávat, tak jsme se vždy dostali k tomu, že dílo není od Pabla Picassa jak nám
+    <p class="right">Když jsme chtěli začít dílo zpracovávat, tak jsme se vždy dostali k tomu, že dílo není od Pabla
+        Picassa jak nám
         Google i veškeré informace okolo říkali. <br>Zkoušeli jsme hledat dál a dál a vždy to dopadlo takhle nebo jen
         dílo
         bylo nadmíru těžké zpracovat pro náš tým. Procházeli jsme to společně v hovoru dalších pár dní a nevěděli si
@@ -76,6 +76,8 @@
     </div>
 </section>
 <section id="page-6" class="page">
+    <h1>Tabulka</h1>
+    <div>
         <table>
             <tr>
                 <td colspan="7" style="font-size: 24px; text-align: center;">Jak dlouho vše trvalo?</td>
@@ -108,11 +110,11 @@
                 <td>7 h 45 min</td>
             </tr>
         </table>
-    <div>
-        <a href="#page-5" class="btn btn-dark">Předchozí <i class="fas fa-arrow-circle-left"></i></a>
+        <div>
+            <a href="#page-5" class="btn btn-dark">Předchozí <i class="fas fa-arrow-circle-left"></i></a>
+        </div>
     </div>
 </section>
-</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -126,8 +128,9 @@
     });
 
     const img = document.querySelectorAll("img");
-    setTimeout(function() {
+    setTimeout(function () {
         img.style.display = "none";
     }, 2000);
 </script>
+</body>
 </html> 

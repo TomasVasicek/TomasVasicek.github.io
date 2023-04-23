@@ -70,13 +70,16 @@ body {
     background: #f4f4f4;
     color: #333333;
 }
+#page-6 h1 {
+    color: black;
+}
 img {
     display: inline-block;
     height: 250px;
     width: auto;
     align-self: center;
     justify-content: center;
-    opacity: 40%;
+    opacity: 50%;
     margin-top: 50px;
 }
 #page-5 .img1 {
@@ -108,4 +111,12 @@ tr:nth-child(even), th {
 }
 tr:nth-child(odd) {
     background-color: darkslateblue;
+}
+@media screen and (max-width:768px) {
+    img {
+        display: none;
+    }
+    #page-6 {
+        display: none;
+    }
 }
