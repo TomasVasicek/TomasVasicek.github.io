@@ -4,6 +4,7 @@
     --page-3-color: #00192b;
     --page-4-color: #264370;
     --page-5-color: #4477c9;
+    --page-6-color: lightgray;
     --animate-speed: 1s;
 }
 body {
@@ -16,6 +17,9 @@ body {
 }
 #page-1{
     background: var(--page-1-color);
+}
+#page-6{
+    background: var(--page-6-color);
 }
 #page-2{
     background: var(--page-2-color);
@@ -66,21 +70,42 @@ body {
     background: #f4f4f4;
     color: #333333;
 }
-.down {
-    transform: translateZ(-1200px);
-    animation: heading var(--animate-speed) forwards ease-in;
+img {
+    display: inline-block;
+    height: 250px;
+    width: auto;
+    align-self: center;
+    justify-content: center;
+    opacity: 40%;
+    margin-top: 50px;
 }
-@keyframes heading {
-    to {
-        transform: translateY(0);
-    }
+#page-5 .img1 {
+position: absolute;
+    left:50%;
 }
-.right {
-    transform: translateX(-1800px);
-    animation: text var(--animate-speed) forwards ease-in 2s;
+#page-5 .img1 {
+    position: absolute;
+    left:66%;
+    padding-bottom: -50px;
 }
-@keyframes text {
-    to {
-        transform: translateX(0);
-    }
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+}
+
+tr:nth-child(even), th {
+    background-color: grey;
+}
+tr:nth-child(odd) {
+    background-color: darkslateblue;
 }
